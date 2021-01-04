@@ -1,0 +1,40 @@
+:root{
+    /**para declarar variaveis precisa ser dentro do root **/
+    --vermelho: #e50914;
+    --preta: #141414;   
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box; /** garante que os elementos vão ficar dentro da caixa no tamanho que você definiu **/
+}
+
+body{
+    background: var(--preta); /**aplica a cor da variavel mencionada no root **/
+    font-family: 'Times New Roman', Times, serif
+}
+
+header .container {
+    display: flex; /**tendencia de jogar tudo como linha - row **/
+    flex-direction: row;
+    align-items: center; /**alinhar ao centro**/
+    justify-content: space-between; /** trabalha em como os elementos estão disponibilizados de maneira horizontal - space between cria um espaço entre tags**/
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px; /** dá um distanciamento entre os links **/
+}
+
+header nav a:hover{
+    color: #fff; /** evento para mudar a cor quando o mouse passa nos links **/
+}
