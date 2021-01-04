@@ -3,13 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/main.css">
-    <title>Clone - Netflix</title>
+    <link rel="stylesheet" href="/clone-netflix/style/main.css">
+
+    <!-- Owl CSS-->
+    <link rel="stylesheet" href="/clone-netflix/style/Owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="/clone-netflix/style/Owl/owl.theme.default.min.css">
+
+    <!-- Responsividade -->
+    <link rel="stylesheet" href="/clone-netflix/style/responsive.css">
+
+    <title>HACKFLIX</title>
+  
 </head>
 <body>
     <header>
         <div class="container">
-            <h2 class="logo">NETFLIX</h2>
+            <h2 class="logo">HACKFLIX</h2>
             <nav>
                 <a href="#">Inicio</a>
                 <a href="#">Séries</a>
@@ -18,5 +27,43 @@
             </nav>
         </div>
     </header>
-</body>
+    
+    <main>
+        <div class="filme-principal">
+            <!-- classe container é uma classe wrapper, pois é utilizada várias vezes.
+            Para criar uma div com o nome da classe de maneira mais rápida, escreva div. e o nome da classe-->
+            <div class="container">
+                <h3 class="titulo">Mr. Robot </h3>
+                <p class="descricao">Elliot é um jovem programador que sofre de uma desordem que o torna anti-social. Acreditando que a única forma de se conectar com as pessoas é hackeando suas vidas, ele alia seu conhecimento ao fato de trabalhar em uma empresa de segurança online para proteger aqueles que ele ama daqueles que tentam, de alguma forma, prejudicá-los. Suas atividades chamam a atenção de Mr. Robot, um misterioso anarquista que convida Elliot a fazer parte de uma organização que atua na ilegalidade com o objetivo de derrubar as corporações americanas.</p>
+                <div class="botoes">
+                    <button type="button" class="botao" id="assistir" onclick="window.location.href='magnet:?xt=urn:btih:A7B6E4674974FACEA0E83B29B4A21142C05A2CC7&dn=Mr+Robot+Season+1+Complete+720p+WEB-DL+EN-SUB+x264-%5BMULVAcoded%5D&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce'">
+                        <i class="fas fa-play"></i>
+                        DOWNLOAD - Torrent 🧲
+                    </button>
+                    <button type="button" class="botao" data-toggle="tooltip" data-placement="top" title="Crime, Drama | Recomendado para +16 | 2015">
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="carrossel-filmes">
+        <div class="owl-carousel owl-theme"> <!-- Instrução retirada do site do Owl/demo-->
+            <div class="box-filme" type="button" data-toggle="tooltip" data-placement="top" title="Clique para o Download"></>"><img src="/clone-netflix/img/a-rede-social.jpg" onclick="window.location.href='magnet:?xt=urn:btih:965554390D50F07B206115A0D6D619D5678AD5A4&dn=The+Social+Network+%282010%29+1080p+BrRip+x264+-+1.2GB+-+YIFY&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce'"></div>
+            <div class="box-filme" type="button" data-toggle="tooltip" data-placement="top" title="Clique para o Download"><img src="/clone-netflix/img/blackhat.jpg" onclick="window.location.href='magnet:?xt=urn:btih:09A80CA43220C1C5ECDDDA4FCCBCF00A7041BB6A&dn=Blackhat+%282015%29+720p+BrRip+x264+-+YIFY&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce'"></div>
+            <div class="box-filme" type="button" data-toggle="tooltip" data-placement="top" title="Clique para o Download"><img src="/clone-netflix/img/dilema-redes.jpg" onclick="window.location.href='magnet:?xt=urn:btih:7488122430EF0034550814F30BAF96FAC4BDC845&dn=The+Social+Dilemma+%282020%29+%5B1080p%5D+%5BWEBRip%5D+%5B5.1%5D&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce'"></div>    
+            <div class="box-filme" type="button" data-toggle="tooltip" data-placement="top" title="Clique para o Download"><img src="/clone-netflix/img/skyfall.jpg" onclick="window.location.href='magnet:?xt=urn:btih:188AA63C64E1D6B64B74F5BE36CB9244C08A3456&dn=Skyfall+%282012%29+1080p+BrRip+x264+-+YIFY&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce'"></div>
+            <div class="box-filme" type="button" data-toggle="tooltip" data-placement="top" title="Clique para o Download"><img src="/clone-netflix/img/snowden.jpg" onclick="window.location.href='magnet:?xt=urn:btih:98249B32079DF5ADAAD3450B96FABBCBAFB3B828&dn=Snowden+2016+1080p+BluRay+x264+DTS-JYK&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce'"></div>
+            <div class="box-filme" type="button" data-toggle="tooltip" data-placement="top" title="Clique para o Download"><img src="/clone-netflix/img/firewall.jpg" onclick="window.location.href='magnet:?xt=urn:btih:C25E7546C73CF2A80F3D75F22DF9994AF3CF503F&dn=Firewall+%282006%29+1080p+Rifftrax+6ch+2ch+v2&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce'"></div>
+            <div class="box-filme" type="button" data-toggle="tooltip" data-placement="top" title="Clique para o Download"><img src="/clone-netflix/img/jobs.jpg" onclick="window.location.href='magnet:?xt=urn:btih:7BB7D4B9AF75FCA9385C02B2A031950C5F05F36F&dn=JOBS+%282013%29+720p+BrRip+x264+-+YIFY&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce'"></div>
+            <div class="box-filme" type="button" data-toggle="tooltip" data-placement="top" title="Clique para o Download"><img src="/clone-netflix/img/imitacao.jpg" onclick="window.location.href='magnet:?xt=urn:btih:B9A19040C3FCCC5F8AD963F43B4AC8EA3097AF9B&dn=The+Imitation+Game+%282014%29+1080p+BrRip+x264+-+YIFY&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.to%3A2920%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.pirateparty.gr%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.cyberia.is%3A6969%2Fannounce'"></div>
+        </div>
+    </div>
+<!-- JavaScript dá erro se carregado antes da página ter sido carregada, portanto, como o HTML é sequencial, é importante colocar o JS sempre no final-->
+    <script src="https://kit.fontawesome.com/7f527090d3.js" crossorigin="anonymous"></script>
+    <script src="/clone-netflix/js/Owl/jquery.min.js" ></script>
+    <script src="/clone-netflix/js/Owl/owl.carousel.min.js" ></script>
+    <script src="/clone-netflix/js/setup.js" ></script>
 </html>

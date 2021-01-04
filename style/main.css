@@ -4,22 +4,25 @@
     --preta: #141414;   
 }
 
+/* elementos base */
+
 *{
     margin:0;
     padding: 0;
-    box-sizing: border-box; /** garante que os elementos vão ficar dentro da caixa no tamanho que você definiu **/
+    box-sizing: border-box; /* garante que os elementos vão ficar dentro da caixa no tamanho que você definiu */
 }
 
 body{
-    background: var(--preta); /**aplica a cor da variavel mencionada no root **/
-    font-family: 'Times New Roman', Times, serif
+    background: var(--preta); /* aplica a cor da variavel mencionada no root */
+    color: white;
+    font-family: 'Arial', Times, serif
 }
 
 header .container {
-    display: flex; /**tendencia de jogar tudo como linha - row **/
+    display: flex; /* tendência de jogar tudo como linha - row */
     flex-direction: row;
-    align-items: center; /**alinhar ao centro**/
-    justify-content: space-between; /** trabalha em como os elementos estão disponibilizados de maneira horizontal - space between cria um espaço entre tags**/
+    align-items: center; /* alinhar ao centro */
+    justify-content: space-between; /* trabalha em como os elementos estão disponibilizados de maneira horizontal - space between cria um espaço entre tags */
 }
 
 header .logo{
@@ -32,9 +35,79 @@ header .logo{
 header nav a{
     text-decoration: none;
     color: #AAA;
-    margin-right: 10px; /** dá um distanciamento entre os links **/
+    margin-right: 10px; /* dá um distanciamento entre os links */
 }
 
 header nav a:hover{
-    color: #fff; /** evento para mudar a cor quando o mouse passa nos links **/
+    color: #fff; /* evento para mudar a cor quando o mouse passa nos links */
+}
+
+/* filme principal */
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/clone-netflix/img/mrRobot.jpg'); /* linear-gradient cria um gradiente na imagem, e precisa de no mínimo duas cores */
+    
+    height: 400px;
+    background-size: cover; /* a img pega a área de cobertura da caixa */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* alinha os elementos da esquerda pra direita, dependendo da direção do flex direction */
+
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 10pt;
+}
+
+.titulo {
+    margin-top: 15%; /* percentual faz o calculo automático pra ti */
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50); /* ordem do rgba: vermelho, verde, azul e a camada alpha */
+    border: none;
+    color: white;
+    
+    padding: 15px 30px; /* espaço interno do elemento. Quando apenas um valor, refere-se as 4 posições. Mais informações são em sentido horário */
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .4s ease all; /*animação entre uma transação e outra */
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 10px;
+}
+
+.container{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.filme-principal .container{
+    width: 60%; /*quando a tela é minimizada, se torna responsível, e não ultrapassa toda a tela */
+    text-align: justify;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carrossel-filmes{
+    margin-top: 5px;
 }

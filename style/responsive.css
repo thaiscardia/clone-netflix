@@ -1,0 +1,18 @@
+@media screen and (max-width: 730px){
+    /* define as condições da tela e até o tamanho determinado entre ()*/
+    header .container {
+        display: flex;
+        flex-direction: column; /*sempre que menor que 730px, o flex joga os itens para baixo - formato coluna */
+    }
+
+    .botao{
+        margin-top: 5px;
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .descricao {
+        width: 70%;
+    }
+}
